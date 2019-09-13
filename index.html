@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Debate</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="lib/css/style.css">
+    <link rel="stylesheet" type="text/css" href="lib/css/calendar.css">
+    <script src="lib/js/calendar.js" defer></script>
+    <script src="lib/js/script.js" defer></script>
+    <script src="https://momentjs.com/downloads/moment-with-locales.js" defer></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
+    <script src="https://kit.fontawesome.com/6c5bd4c5c0.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCKt8MTNVsgN5K7k60i2kavK1urtW_8JZ4",
+            authDomain: "clubscheduling-83002.firebaseapp.com",
+            databaseURL: "https://clubscheduling-83002.firebaseio.com",
+            projectId: "clubscheduling-83002",
+            storageBucket: "clubscheduling-83002.appspot.com",
+            messagingSenderId: "587350491819",
+            appId: "1:587350491819:web:2eb3a700ae1d11e426edee"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body>
+    <!-- Calendar -->
+    <div class="calendar">
+        <div class="calendar__month">
+            <div class="cal-month__previous">
+                <</div> <div class="cal-month__current">
+            </div>
+            <div class="cal-month__next">></div>
+        </div>
+        <div class="calendar__head">
+            <div class="cal-head__day"></div>
+            <div class="cal-head__day"></div>
+            <div class="cal-head__day"></div>
+            <div class="cal-head__day"></div>
+            <div class="cal-head__day"></div>
+            <div class="cal-head__day"></div>
+            <div class="cal-head__day"></div>
+        </div>
+        <div class="calendar__body">
+            <div class="cal-body__week">
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+            </div>
+            <div class="cal-body__week">
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+            </div>
+            <div class="cal-body__week">
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+            </div>
+            <div class="cal-body__week">
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+            </div>
+            <div class="cal-body__week">
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+            </div>
+            <div class="cal-body__week">
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+                <div class="cal-body__day"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Calendar End -->
+
+    <div class="align">
+        <button class="taskButton2">+</button>
+        <div>
+            <h1 class="title">Schedule</h1>
+        </div>
+        <button class="taskButton">+</button>
+    </div>
+    <div class="userContainer Contain">
+        <form>
+            <div class="inputContainer inputStyle">
+                <div class="singleInput taskInput">
+                    <label for="task">Title: </label>
+                    <input id="task" type="text">
+                </div>
+                <div class="singleInput timeInput">
+                    <label for="time">Content:</label>
+                    <input id="content" type="text">
+                </div>
+                <div class="singleInput dayInput">
+                    <label for="day">Date:</label>
+                    <input id="day" type="date">
+                </div>
+            </div>
+            <button id="submitButton">Add</button>
+        </form>
+    </div>
+    <div class="taskContain Contain">
+
+    </div>
+
+</body>
+
+</html>
