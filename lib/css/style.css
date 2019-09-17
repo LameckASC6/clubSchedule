@@ -1,13 +1,33 @@
 
 .Contain{
-    margin-left: 5%;
+    margin-left: 1vw;
     margin-right: 5%;
     margin-bottom: 2%;
+}
+
+.taskContain{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    height: 100%;
+    width: 49vw;
+    overflow: auto;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.schedule{
+    display: flex;
+    flex-direction: row;
 }
 .newUnit{
     display: flex;
     background: white;
     border-radius: 5px;
+    margin-left: 1.5vw;
+    width: 45vw;
     height: 50px;
     margin-bottom: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -53,8 +73,8 @@
     /* border-radius: 1% 50% 50% 1%; */
     font-size: 10px;
     text-align: center;
-    float: right;
     border: none;
+    cursor: pointer;
     /* padding:0%;
     margin:0%; */
     font-size: 20px;
@@ -110,6 +130,9 @@ span {
     flex-grow: 1;
 }
 form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background: none;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -118,6 +141,7 @@ form {
     color: #19647E;
 }
 #submitButton {
+    float: right;
     text-decoration: none;
     border: none;
     background: #333;
@@ -152,6 +176,7 @@ input {
     border-left: none;
     border-top: none;
     border-bottom-style: solid;
+    width: 30vw;
     border-bottom-color: #333;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
@@ -218,6 +243,7 @@ button {
 .submitEdit {
     text-decoration: none;
     border: none;
+    cursor: pointer;
     background: #333;
     color: white;
     font-size: 20px;
@@ -226,6 +252,7 @@ button {
     border-radius: 0px 0px 0px 0px;
 }
 .deleteEdit {
+    cursor: pointer;
     text-decoration: none;
     border: none;
     background: #333;
@@ -239,10 +266,9 @@ button {
 form,
 .div3,
 .editIn {
-    display: grid;
+    display: flex;
 }
 .editIn {
-    grid-template: auto/auto 1fr;
     padding-top: 10px;
     padding-left: 10px;
     padding-bottom: 10px;

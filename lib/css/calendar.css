@@ -3,14 +3,13 @@
     color: #aaa;
     font-family: 'Josefin Sans';
     padding: 1%;
-    float: left;
     border: 2px solid #333;
     border-radius: 5px;
   }
   
   .calendar {
-    width: 350px;
-    margin: 50px auto 0;
+    width: 50vw;
+    height: 92vh;
   }
   
   .calendar__month {

@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" type="text/css" href="lib/css/style.css">
     <link rel="stylesheet" type="text/css" href="lib/css/calendar.css">
+    <script src="lib/js/alignTimer.js" defer></script>
     <script src="lib/js/calendar.js" defer></script>
     <script src="lib/js/script.js" defer></script>
     <script src="https://momentjs.com/downloads/moment-with-locales.js" defer></script>
@@ -43,110 +44,116 @@
 </head>
 
 <body>
-    <!-- Calendar -->
-    <div class="calendar">
-        <div class="calendar__month">
-            <div class="cal-month__previous">
-                <</div> <div class="cal-month__current">
-            </div>
-            <div class="cal-month__next">></div>
-        </div>
-        <div class="calendar__head">
-            <div class="cal-head__day"></div>
-            <div class="cal-head__day"></div>
-            <div class="cal-head__day"></div>
-            <div class="cal-head__day"></div>
-            <div class="cal-head__day"></div>
-            <div class="cal-head__day"></div>
-            <div class="cal-head__day"></div>
-        </div>
-        <div class="calendar__body">
-            <div class="cal-body__week">
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-            </div>
-            <div class="cal-body__week">
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-            </div>
-            <div class="cal-body__week">
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-            </div>
-            <div class="cal-body__week">
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-            </div>
-            <div class="cal-body__week">
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-            </div>
-            <div class="cal-body__week">
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-                <div class="cal-body__day"></div>
-            </div>
-        </div>
-    </div>
-    <!-- Calendar End -->
-
-    <div class="align">
-        <button class="taskButton2">+</button>
-        <div>
-            <h1 class="title">Schedule</h1>
-        </div>
-        <button class="taskButton">+</button>
-    </div>
-    <div class="userContainer Contain">
-        <form>
-            <div class="inputContainer inputStyle">
-                <div class="singleInput taskInput">
-                    <label for="task">Title: </label>
-                    <input id="task" type="text">
+    <div class="schedule">
+        <!-- Calendar -->
+        <div class="calendar">
+            <div class="calendar__month">
+                <div class="cal-month__previous">
+                    <</div> <div class="cal-month__current">
                 </div>
-                <div class="singleInput timeInput">
-                    <label for="time">Content:</label>
-                    <input id="content" type="text">
+                <div class="cal-month__next">></div>
+            </div>
+            <div class="calendar__head">
+                <div class="cal-head__day"></div>
+                <div class="cal-head__day"></div>
+                <div class="cal-head__day"></div>
+                <div class="cal-head__day"></div>
+                <div class="cal-head__day"></div>
+                <div class="cal-head__day"></div>
+                <div class="cal-head__day"></div>
+            </div>
+            <div class="calendar__body">
+                <div class="cal-body__week">
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
                 </div>
-                <div class="singleInput dayInput">
-                    <label for="day">Date:</label>
-                    <input id="day" type="date">
+                <div class="cal-body__week">
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                </div>
+                <div class="cal-body__week">
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                </div>
+                <div class="cal-body__week">
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                </div>
+                <div class="cal-body__week">
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                </div>
+                <div class="cal-body__week">
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
+                    <div class="cal-body__day"></div>
                 </div>
             </div>
-            <button id="submitButton">Add</button>
-        </form>
-    </div>
-    <div class="taskContain Contain">
-
+        </div>
+        <!-- Calendar End -->
+        <div class="content">
+            <div class="align">
+                <button class="taskButton2">+</button>
+                <div>
+                    <h1 class="title">Schedule</h1>
+                </div>
+                <button class="taskButton">+</button>
+            </div>
+            <div class="userContainer Contain">
+                <form>
+                    <div class="inputContainer inputStyle">
+                        <div class="singleInput taskInput">
+                            <label for="task">Title: </label>
+                            <input id="task" type="text">
+                        </div>
+                        <div class="singleInput timeInput">
+                            <label for="content">Content:</label>
+                            <input id="content" type="text">
+                        </div>
+                        <div class="singleInput timeInput">
+                            <label for="time">Time:</label>
+                            <input id="time" type="time">
+                        </div>
+                        <div class="singleInput dayInput">
+                            <label for="day">Date:</label>
+                            <input id="day" type="date">
+                        </div>
+                    </div>
+                    <button id="submitButton">Add</button>
+                </form>
+            </div>
+            <div class="taskContain Contain">
+            </div>
+        </div>
     </div>
 
 </body>
