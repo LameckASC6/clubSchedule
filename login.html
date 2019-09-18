@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-signin-client_id"
+        content="178361234445-fp76ho0kckgu2e7k04k4bb8k75f3ij7u.apps.googleusercontent.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="lib/css/login.css" rel="stylesheet" type="text/css">
+    <script src="lib/js/bcrypt.min.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCKt8MTNVsgN5K7k60i2kavK1urtW_8JZ4",
+            authDomain: "clubscheduling-83002.firebaseapp.com",
+            databaseURL: "https://clubscheduling-83002.firebaseio.com",
+            projectId: "clubscheduling-83002",
+            storageBucket: "clubscheduling-83002.appspot.com",
+            messagingSenderId: "587350491819",
+            appId: "1:587350491819:web:2eb3a700ae1d11e426edee"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="lib/js/login.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme:400,700|Cabin:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="login">
+        <h1 id="main_title"></h1>
+        <p id="story_result"></p>
+        <form class="login_container">
+            <div class="loginInput">
+                <input type="text" id="username" placeholder="Username">
+            </div>
+            <div class="loginInput">
+                <input type="text" id="password" placeholder="Password">
+            </div>
+            <button id="submit_button">
+                LOGIN
+            </button>
+        </form>
+        <a href="index.html">
+            GO BACK
+        </a>
+    </div>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+</body>
+
+</html>

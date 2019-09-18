@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#title{
+    margin-left: 5%;
+    color: white;
+}
+#navText {
+    background-color: #19647E; 
+    height: 100px;
+    width: 91%;
+    position:absolute;
+    margin-left: 13%;
+    display: flex;
+    align-items: center;
+    z-index: -1; 
+    font-family: 'BioRhyme', serif;
+}
+.logoimg {
+    width: 200px;
+}
+
+.login{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loginInput{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.loginInput input{
+    flex:1;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1px #19647E;
+    caret-color: #19647E;
+    text-align: center;
+    font-size: 16px;
+}
+
+input:focus{
+    outline:none;
+}
+
+.login_container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#my-signin2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#submit_button{
+    display : inline-block;  
+    border-style : solid;
+    border-width : 1vw;;
+    border-radius : 50vw;;
+    box-shadow : 0 1px 4px rgba(0,0,0,.6);
+    font-size : 20px;;
+    font-weight : bold;
+    color : #ffff;
+    text-shadow : 0 1px 3px rgba(0,0,0,.4);
+    text-decoration : none;
+    border-color : #19647E;
+    background-color: #19647E;
+  }
+#title{
+    font-size: 55px;
+}
