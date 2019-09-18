@@ -7,20 +7,6 @@ body {
     margin-left: 5%;
     color: white;
 }
-#navText {
-    background-color: #19647E; 
-    height: 100px;
-    width: 91%;
-    position:absolute;
-    margin-left: 13%;
-    display: flex;
-    align-items: center;
-    z-index: -1; 
-    font-family: 'BioRhyme', serif;
-}
-.logoimg {
-    width: 200px;
-}
 
 .login{
     display:flex;
@@ -74,6 +60,7 @@ input:focus{
     text-decoration : none;
     border-color : #19647E;
     background-color: #19647E;
+    cursor: pointer;
   }
 #title{
     font-size: 55px;
