@@ -84,9 +84,27 @@
     cursor: pointer;
 }
 
+.signOutButton{
+    text-decoration: none;
+    border: none;
+    background: #333;
+    color: white;
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
 .loginButton:hover{
     height: 45px;
     width: 90px;
+    transition: all .3s ease;
+}
+
+.signOutButton:hover{
+    height: 45px;
+    width: 110px;
     transition: all .3s ease;
 }
 
